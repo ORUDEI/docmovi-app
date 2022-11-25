@@ -12,7 +12,7 @@ const DataTable = () => {
     const handleDelete = () => PatientCollection.remove(patient._id);
 
     return (
-      <tr className="border-b" key={patient._id}>
+      <tr className="border-b hover:bg-sky-50" key={patient._id}>
         <td className="p-6">
           <p className="text-2xl text-gray-800">
             {`${patient.names} ${patient.fatherLastName} ${patient.motherLastName}`}
