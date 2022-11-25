@@ -198,7 +198,7 @@ const Form = () => {
               <input
                 id="zipCode"
                 type="number"
-                value={zipCode}
+                value={zipCode? zipCode : 0}
                 className="mt-2 block w-full p-3 bg-gray-50"
                 placeholder="Código postal"
                 {...register('zipCode', { validate: (value) => value > 0 })}
